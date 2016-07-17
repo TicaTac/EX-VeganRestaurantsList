@@ -7,7 +7,7 @@ public class DBConstants {
 
     public static String restaurantName="name";
     public static String restaurantAdress="address";
-   public static String isVegan="isvegan";
+    public static String isVegan="isvegan";
 
 
 }

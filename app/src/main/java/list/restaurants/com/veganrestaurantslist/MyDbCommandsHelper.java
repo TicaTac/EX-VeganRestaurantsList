@@ -31,7 +31,8 @@ public class MyDbCommandsHelper {
         int isVegan=0;
         if(resturant.isVegan)
             isVegan=1;
-        /// safe command
+
+        /// safe SQL query to add to database
         ContentValues contentValues= new ContentValues();
 
         contentValues.put(DBConstants.restaurantName, resturant.name);
