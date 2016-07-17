@@ -12,7 +12,7 @@ import java.util.List;
 
 public class MyRestarantsList extends AppCompatActivity {
 
-
+    // ArrayList
     ArrayList<Resturant> allRestaurants;
 
     @Override
@@ -20,7 +20,7 @@ public class MyRestarantsList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_y_restarants_list);
 
-
+        // SQL Helper
 
         MyDbCommandsHelper dbhelper= new MyDbCommandsHelper(this);
         allRestaurants=dbhelper.getAllResturants();

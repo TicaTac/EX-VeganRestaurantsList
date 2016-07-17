@@ -26,15 +26,15 @@ public class MyDbCommandsHelper {
     }
 
 
-    public void addRestaurant(Resturant resturant)
+    public void  addRestraunt(Resturant resturant)
     {
         int isVegan=0;
         if(resturant.isVegan)
             isVegan=1;
-
+        /// safe command
         ContentValues contentValues= new ContentValues();
 
-        contentValues.put( DBConstants.restaurantName, resturant.name);
+        contentValues.put(DBConstants.restaurantName, resturant.name);
         contentValues.put(DBConstants.restaurantAdress, resturant.address);
         contentValues.put(DBConstants.isVegan, isVegan);
 
